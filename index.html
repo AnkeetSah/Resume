@@ -14,13 +14,13 @@
     }
     body{
       background-color: rgb(7, 6, 6);
-      font-size: 14px;
+      font-size: 15px;
     }
     .container{
       background-color: rgb(250, 247, 247);
       /* background-color: aqua; */
       width: 850px;
-      height: 270vh;
+      height: 200vh;
       background-color: 2px solid black;
       margin: 40px auto;
       position: relative;
@@ -29,12 +29,12 @@
       background-color: rgb(137, 141, 141);
       height:200px ;
       background-color: rgb(205, 212, 64);
-      background: url('https://cdn.wallpapersafari.com/47/58/bu724M.jpg');
+      background: url('build.webp');
       background-size: cover;
      
     }
   
-    .container-left{
+    .container-left , .container2-left{
       height: 94.2%;
       width: 256px;
       background-color: rgb(14, 17, 9);
@@ -45,13 +45,20 @@
       border-top-right-radius: 130px; 
        
     }
+   .container2-left{
+      top: 0px;
+    border-top-left-radius:0px;
+      border-top-right-radius: 0px; 
+      padding-top: 20px;
+       height: 100%;
+    }
 
     .container-left .pic{
       width: 220px;
       height: 220px;
       border-radius: 50%;
       position: absolute;
-      left: 10px;
+      left: 18px;
       top: 15px;
       border: 5px solid rgb(132, 203, 248);
       padding: 15px;
@@ -79,6 +86,7 @@
       margin-top: 10px;
       font-weight: bold;
       color: rgb(14, 3, 3);
+      
     }
     .contact{
       font-weight: bolder;
@@ -113,7 +121,7 @@
       color: rgb(222, 215, 206);
       margin-left: 20px;
       margin-top: 10px;
-      font-size: 15px;
+      font-size: 17px;
       list-style-type: none;
     }
     
@@ -123,8 +131,9 @@
     }
     @media only screen and (max-width:400px){
       .container{
+        margin-top: 0px;
        width: 210%;
-       height: 290vh;
+       height: 210vh;
       }
 
       button{
@@ -180,7 +189,7 @@
       font-size: 30px;
       border-radius:  0 25px 25px 0;
       padding: 5px;
-      width: 200px;
+      width: 215px;
       
     }
 
@@ -189,7 +198,7 @@
      table{
       border: 5px solid;
       border-collapse: collapse;
-    
+      
      }
     th {
       background-color: rgb(11, 18, 23);
@@ -238,8 +247,8 @@
       cursor: pointer;
     }
 
-    
-     
+   
+   
   </style>
 </head>
 <body>
@@ -252,7 +261,7 @@
 
       <div class="details">
         <h1>PROFILE</h1>
-        <h4 class="descript"><q>I am a skilled web developer with expertise in both frontend and backend technologies. With a strong foundation in front-end development, I am proficient in HTML, CSS, and JavaScript, and I excel at creating responsive and 
+        <h4 class="descript" style="margin-left: 0px;"><q>I am a skilled web developer with expertise in both frontend and backend technologies. With a strong foundation in front-end development, I am proficient in HTML, CSS, and JavaScript, and I excel at creating responsive and 
           user-friendly web interfaces. In addition, I possess effective knowledge of backend development,
            which includes experience with server-side scripting languages, databases, and server management.
             My combination of skills allows me to develop full-stack web applications, ensuring a seamless user 
@@ -268,6 +277,7 @@
           <th>Board/University</th>
           <th>% CGPA</th>
           <th>Year</th>
+
           <tr>
             <td>B.TECH</td>
             <td style="text-align: center;">G.I.E.T.U</td>
@@ -294,7 +304,7 @@
       </div>
       <div class="details">
         <h1>PROJECTS</h1>
-          <h2>All the projects mentioned below had helped me alot and I gain lots of knowledge while working on them.</h2>
+          <h2 style="margin-top: 10px;">All the projects mentioned below had helped me alot and I gain lots of knowledge while working on them.</h2>
          <ol>
           <li class="li"><h3>Hotel Management Web App</h3></li>
                <h4>The Hotel Management App, powered by Node.js and MySQL, simplifies hotel operations for owners and enhances the guest experience. It streamlines check-ins, check-outs,
@@ -302,7 +312,7 @@
                  saving time. Guests benefit from efficient reservations and personalized services, ensuring a pleasant stay. Completing this task, I also learned some valuable backend development skills.</h4>
           <li class="li"><h3>Image Search Web App</h3></li>
            <h4>A Simple image search app which helped me to know how to extract accurate data with the help of API. This API is provided by Unsplash website.</h4>
-          <li class="li"><h3>GIF and Sticker Search Web App</h3></li>
+          <!-- <li class="li"><h3>GIF and Sticker Search Web App</h3></li>
           <h4>A interesting Gif/Sticker search app and the stickers/Gifs can be downloaded, API provided by Giphy website.</h4>
           <li class="li"><h3>Weather Web App</h3></li>
           <h4>An accurate weather report providing app which provides accurate weather of a particular city.</h4>
@@ -311,7 +321,7 @@
           <li class="li"><h3>Motivational Quotes Provider</h3></li>
           <h4>Need Some motivation then this App is perfect it provides good Motivational Quotes which can cheer up anyone who is having a bad day.</h4>
           <li class="li"><h3>Todo-List Web App</h3></li>
-          <h4>A simple Todo-List App which helped to learn CRUD Operation.</h4>
+          <h4>A simple Todo-List App which helped to learn CRUD Operation.</h4> -->
          </ol>
       </div>
 
@@ -324,72 +334,105 @@
       <div class="my-contact">
         <h2 class="contact">CONTACT</h2>
            <ul>
-            <li><a href="mailto:akatwork92@gmail.com" class="mail-link"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="" class="logo">akatwork92@gmail.com</a></li>
-            <li><a href="tel:+916370250741" class="phone-link"><img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="" class="logo">637-0250-741</a></li>
+            <li><a href="mailto:akatwork92@gmail.com" class="mail-link"><img src="5968534.png" alt="" class="logo">akatwork92@gmail.com</a></li>
+            <li><a href="tel:+916370250741" class="phone-link"><img src="call.png" alt="" class="logo">637-0250-741</a></li>
             <li><a href="https://www.linkedin.com/in/ankeet-kumar-sah-9460a2255/" class="phone-link"><img src="https://th.bing.com/th/id/OIP.BGI5k23VvzqEoq083NDJiAHaHw?pid=ImgDet&rs=1" alt="" class="logo">Ankeet Kumar sah</a></li>
-            <li><a href="https://github.com/AnkeetSah" class="phone-link"><img src="https://pluspng.com/img-png/github-logo-png-github-logo-png-github-icon-png-transparent-png-kindpng-860x902.png" alt="" class="logo">AnkeetSah</a></li>
+            <li><a href="https://github.com/AnkeetSah" class="phone-link"><img src="git.png" alt="" class="logo">AnkeetSah</a></li>
            </ul>
       </div>
       <br> <br> <br>
       <div class="my-skills">
         <h2 class="hardskills">HARD SKILLS</h2>
             <ul>
-            <li> <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="" class="logo">HTML</li>
-            <li> <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="" class="logo">CSS</li>
-            <li> <img src="https://th.bing.com/th?id=OIP.BxxfUqJaajzMYP_dg3ynCQHaIW&w=235&h=265&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="" class="logo">JavaScript</li>
-            <li><img src="https://www.konstantinfo.com/blog/wp-content/uploads/2018/07/expressjs-framework.png" alt="" class="logo">Express</li>
-            <li><img src="https://th.bing.com/th/id/OIP.tuuoqHGsdDKcI0dsNJVjMwHaHa?pid=ImgDet&rs=1" alt="" class="logo">Mysql</li>
-            <li><img src="https://th.bing.com/th/id/OIP.-wK8kSbegCP7kdE8hVjRCQHaHk?pid=ImgDet&rs=1" alt="" class="logo">C</li>
-            <li><img src="https://www.seeklogo.net/wp-content/uploads/2011/06/java-logo-vector.png" alt="" class="logo">JAVA</li>
-            <li><img src="https://th.bing.com/th/id/OIP.EDJ9xoErBbZqK2tExVoJfAHaHY?pid=ImgDet&rs=1" alt="" class="logo">Python</li>
+            <li> <img src="html.png" alt="" class="logo">HTML</li>
+            <li> <img src="css.png" alt="" class="logo">CSS</li>
+            <li> <img src="JS.jpeg" alt="" class="logo">JavaScript</li>
+            <li><img src="expressjs-framework.png" alt="" class="logo">Express</li>
+            <li><img src="mysql.jpeg" alt="" class="logo">Mysql</li>
+            <li><img src="c.jpeg" alt="" class="logo">C</li>
+            <li><img src="java.png" alt="" class="logo">JAVA</li>
+            <li><img src="python.jpeg" alt="" class="logo">Python</li>
            </ul>
       </div>
        <br>
       <div class="my-skills">
         <h2 class="hardskills">SOFT SKILLS</h2>
         <UL>
-          <li><img src="https://cdn-icons-png.flaticon.com/512/9066/9066963.png" alt="" class="logo">COMMUNICATION  SKILLS</li>
-          <LI> <img src="https://cdn-icons-png.flaticon.com/512/10306/10306694.png" alt="" class="logo">TEAMWORK</LI>
-          <LI> <img src="https://cdn-icons-png.flaticon.com/512/5680/5680055.png" class="logo" alt="">ADAPTABILITY</LI>
-          <LI><img src="https://cdn-icons-png.flaticon.com/512/3310/3310163.png" alt="" class="logo">PROBLEM-SOLVING</LI>
-          <li><img src="https://cdn-icons-png.flaticon.com/512/1478/1478909.png" class="logo" alt="">LEADERSHIP</li>
-          <li><img src="https://cdn-icons-png.flaticon.com/512/10809/10809442.png" alt="" class="logo">DECISION-MAKING</li>
+          <li><img src="communication.png" alt="" class="logo">COMMUNICATION  SKILLS</li>
+          <LI> <img src="team.png" alt="" class="logo">TEAMWORK</LI>
+          <LI> <img src="adapt.png" class="logo" alt="">ADAPTABILITY</LI>
+          <LI><img src="solving.png" alt="" class="logo">PROBLEM-SOLVING</LI>
+          <li><img src="leader.png" class="logo" alt="">LEADERSHIP</li>
+          <li><img src="decision.png" alt="" class="logo">DECISION-MAKING</li>
         </UL>
       </div>
        <br> br
       <div class="my-acheivmemts">
         <h2 class="acheive">MY ACHEIVMENTS</h2>
            <ul>
-            <li><img src="https://cdn-icons-png.flaticon.com/512/275/275918.png" alt="" class="logo">8.98 CGPA IN 1st YEAR</li>
-            <li><img src="https://cdn-icons-png.flaticon.com/512/275/275918.png" alt="" class="logo">INTERNALHACKATHON  <span style="margin-left: 10px;"></span>WINNER</span></li>
-            <li><img src="https://cdn-icons-png.flaticon.com/512/275/275918.png" alt="" class="logo">MR FRESHER FINALIST</span></li>          
+            <li><img src="star.png" alt="" class="logo">8.98 CGPA IN 1st YEAR</li>
+            <li><img src="star.png" alt="" class="logo">INTERNALHACKATHON  <span style="margin-left: 20px;">WINNER</span></li>
+            <li><img src="star.png" alt="" class="logo">MR FRESHER FINALIST</span></li>          
            </ul>
       </div>
+       <br> <br>
+     
       </div>
-      
+     <!-- <div class="my-hobby">
+        <h2 class="acheive">MY HOBBYS</h2>
+           <ul>
+            <li><img src="star.png" alt="" class="logo">Coding</li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/11524/11524065.png" alt="" class="logo">Web Development<span style="margin-left: 20px;"</span></li>
+            <li><img src="star.png" alt="" class="logo">Sports</span></li>          
+           </ul>
+      </div>  -->
     </h2>
    </div>
   </div>
   </div>
-  <button>Download</button>
+
+  <div class="container">
+    <div class="container2-left">
+      <div class="my-hobby">
+        <h2 class="acheive">MY HOBBYS</h2>
+           <ul>
+            <li><img src="coding.png" alt="" class="logo">Coding</li>
+            <li><img src="web.png" alt="" class="logo">Web Development<span style="margin-left: 20px;"></span></li>
+            <li><img src="sports.png" alt="" class="logo">Sports</span></li>          
+           </ul>
+      </div> 
+    </div>
+  
+
+  <div class="details" style="margin-left: 300px; padding-top: 10px; ">
+    <ol  >
+      <li class="li" value="3"><h3>GIF/Sticker Search Web App</h3></li>
+    <h4>A interesting Gif/Sticker search app and the stickers/Gifs can be downloaded, API provided by Giphy website.</h4>
+    <li class="li" value="4"><h3>Weather Web App</h3></li>
+    <h4>An accurate weather report providing app which provides accurate weather of a particular city.</h4>
+    <li class="li" value="5"><h3>Age Calculator Web App</h3></li>
+    <h4>A simple beginner level Age calculator Web app, Which is free from error and provides correct results.</h4>
+    <li class="li" value="6"><h3>Motivational Quotes Provider</h3></li>
+    <h4>Need Some motivation then this App is perfect it provides good Motivational Quotes which can cheer up anyone who is having a bad day.</h4>
+    <li class="li" value="7"><h3>Todo-List Web App</h3></li>
+    <h4>A simple Todo-List App which helped to learn CRUD Operation.</h4>
+    </ol>
+  
+  <h1 style="width: 250px;">DECLARATION</h1>
+
+  <h4 style="margin-left: 0px; margin-top: 5px;">I here declare, that all the above information is true to the best of my knowledge.</h4>
+        <img src="sign.jpg" alt="" style="height: 50px;">
+  </div>
+    
+  </div>
+  <!-- <button>Download</button> -->
 
   
-  <script>
-    
-     const btn = document.querySelector("button");
-
-btn.addEventListener("click", () => {
-  const element = document.querySelector("body");
-  
-  html2pdf(element)
-    
-});
-
-     
+       
 
      
       
-    </script>
+   
      
 </body>
 </html> 
